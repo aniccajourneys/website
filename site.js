@@ -4,17 +4,17 @@
 
 (function () {
   var phases = [
-    { from: 0, to: 5, name: "night", top: "#0b1d2e", bottom: "#24415a", far: "#132a3c", near: "#0a1824", text: "#ffffff",
+    { from: 0, to: 5, name: "night", top: "#1f130b", bottom: "#4a3020", far: "#3a2416", near: "#1a0f08", text: "#f4ece1",
       line: "Stars over the boat, anchored off Komodo." },
-    { from: 5, to: 7, name: "dawn", top: "#3c4f78", bottom: "#e8b59a", far: "#4a5470", near: "#2a3149", text: "#ffffff",
+    { from: 5, to: 7, name: "dawn", top: "#c9a98a", bottom: "#f1dcc4", far: "#9a7a5c", near: "#5e3f25", text: "#2a1a0e",
       line: "Sunrise from the top of Padar Island." },
-    { from: 7, to: 16, name: "day", top: "#2f7f99", bottom: "#a9d7d4", far: "#2c6e6f", near: "#18484c", text: "#ffffff",
+    { from: 7, to: 16, name: "day", top: "#d9c2a0", bottom: "#f4ece1", far: "#a88a68", near: "#6b4a2e", text: "#2a1a0e",
       line: "Clear water and empty sandbanks around Komodo." },
-    { from: 16, to: 18.5, name: "golden", top: "#476a86", bottom: "#e9b871", far: "#4e5a5e", near: "#29363b", text: "#ffffff",
+    { from: 16, to: 18.5, name: "golden", top: "#c49766", bottom: "#f0d6ac", far: "#8a6040", near: "#4f321c", text: "#2a1a0e",
       line: "Golden hour on the cliffs at Uluwatu." },
-    { from: 18.5, to: 20, name: "dusk", top: "#2b2f55", bottom: "#b87a86", far: "#3a3653", near: "#211f36", text: "#ffffff",
+    { from: 18.5, to: 20, name: "dusk", top: "#4e3224", bottom: "#b98a6c", far: "#3f281a", near: "#24150b", text: "#f4ece1",
       line: "The sky over Ubud's rice terraces turning violet." },
-    { from: 20, to: 24, name: "night", top: "#0b1d2e", bottom: "#24415a", far: "#132a3c", near: "#0a1824", text: "#ffffff",
+    { from: 20, to: 24, name: "night", top: "#1f130b", bottom: "#4a3020", far: "#3a2416", near: "#1a0f08", text: "#f4ece1",
       line: "Stars over the boat, anchored off Komodo." }
   ];
 

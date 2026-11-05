@@ -1,21 +1,21 @@
 /* Anicca Journeys — v1
-   Palette: deep sea, lagoon, shell (cool), ink, dusk gold.
+   Palette taken from the logo: paper, brown ink, umber, sand.
    The hero sky follows the current time in Bali (see site.js). */
 
 :root {
-  --sea: #0f3b44;
-  --lagoon: #3e8c84;
-  --shell: #eef2f0;
-  --mist: #c9d6d3;
-  --ink: #16232a;
-  --gold: #c9a45c;
+  --sea: #3b2414;
+  --lagoon: #7a5534;
+  --shell: #f4ece1;
+  --mist: #dccab1;
+  --ink: #2a1a0e;
+  --gold: #b8915e;
 
   /* sky defaults (overwritten by site.js) */
-  --sky-top: #2a5560;
-  --sky-bottom: #9bbcb6;
-  --ridge-far: #1d4a52;
-  --ridge-near: #123940;
-  --sky-text: #ffffff;
+  --sky-top: #d9c2a0;
+  --sky-bottom: #f4ece1;
+  --ridge-far: #a88a68;
+  --ridge-near: #6b4a2e;
+  --sky-text: #2a1a0e;
 
   --display: "Marcellus", "Palatino Linotype", Palatino, Georgia, serif;
   --body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
@@ -99,10 +99,22 @@ a { color: inherit; }
 }
 
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
   font-family: var(--display);
-  font-size: var(--step-1);
-  letter-spacing: 0.04em;
+  font-size: var(--step-0);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
   text-decoration: none;
+}
+.wordmark .mark {
+  width: 2.4rem;
+  height: 2.3rem;
+  background-color: currentColor;
+  -webkit-mask: url("mark.png") center / contain no-repeat;
+  mask: url("mark.png") center / contain no-repeat;
+  flex: none;
 }
 
 .nav-links {
@@ -156,7 +168,7 @@ a { color: inherit; }
   background: var(--shell);
   color: var(--ink);
   border-radius: 6px;
-  box-shadow: 0 12px 32px rgba(15, 59, 68, 0.18);
+  box-shadow: 0 12px 32px rgba(59, 36, 20, 0.18);
   display: none;
 }
 .menu.open { display: block; }
@@ -168,14 +180,14 @@ a { color: inherit; }
   font-size: var(--step--1);
 }
 .menu a:hover { background: var(--mist); text-decoration: none; }
-.menu-soon { color: #5a6b70; }
+.menu-soon { color: #8a7258; }
 
 .nav-cta {
   border: 1px solid currentColor !important;
   border-radius: 999px;
   padding: 0.45rem 1.1rem !important;
 }
-.nav-cta:hover { text-decoration: none !important; background: rgba(255, 255, 255, 0.12); }
+.nav-cta:hover { text-decoration: none !important; background: rgba(184, 145, 94, 0.18); }
 
 .nav-toggle { display: none; }
 
@@ -254,7 +266,7 @@ a { color: inherit; }
   border: 1px solid var(--gold);
   transition: background 0.2s, color 0.2s;
 }
-.button:hover { background: #d9b977; }
+.button:hover { background: #c9a574; }
 
 .button-quiet {
   background: transparent;
@@ -285,7 +297,7 @@ main h3 { font-size: var(--step-1); margin-bottom: 0.5rem; }
   margin-bottom: 3.5rem;
 }
 .journey-head h2 { margin-bottom: 0; }
-.journey-meta { margin: 0; color: #43555b; max-width: 30rem; }
+.journey-meta { margin: 0; color: #6a523c; max-width: 30rem; }
 
 .route {
   list-style: none;
@@ -323,7 +335,7 @@ main h3 { font-size: var(--step-1); margin-bottom: 0.5rem; }
   color: var(--lagoon);
   margin-bottom: 0.4rem;
 }
-.route p { font-size: var(--step--1); color: #34464c; margin: 0; }
+.route p { font-size: var(--step--1); color: #5a4330; margin: 0; }
 
 .included {
   background: var(--sea);
@@ -351,7 +363,7 @@ main h3 { font-size: var(--step-1); margin-bottom: 0.5rem; }
 
 /* Occasions */
 
-.occasions { background: #e2e9e6; }
+.occasions { background: #eadcc8; }
 .occasion-list {
   list-style: none;
   margin: 2rem 0 0;
@@ -360,7 +372,7 @@ main h3 { font-size: var(--step-1); margin-bottom: 0.5rem; }
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2.5rem;
 }
-.occasion-list p { font-size: var(--step--1); color: #34464c; margin: 0; }
+.occasion-list p { font-size: var(--step--1); color: #5a4330; margin: 0; }
 
 /* How it works */
 
@@ -383,7 +395,7 @@ main h3 { font-size: var(--step-1); margin-bottom: 0.5rem; }
   line-height: 1;
   margin-bottom: 0.75rem;
 }
-.steps p { font-size: var(--step--1); color: #34464c; margin: 0; }
+.steps p { font-size: var(--step--1); color: #5a4330; margin: 0; }
 
 /* About */
 
@@ -419,7 +431,7 @@ main h3 { font-size: var(--step-1); margin-bottom: 0.5rem; }
   align-items: baseline;
 }
 .footer-inner p { margin: 0; }
-.site-footer .wordmark { color: var(--shell); font-size: var(--step-1); }
+.site-footer .wordmark { color: var(--shell); font-size: var(--step-0); }
 .copyright { margin-left: auto !important; }
 
 /* ---------- Responsive ---------- */
